@@ -120,7 +120,7 @@ const Collection = () => {
         <div className="flex flex-wrap gap-[32px]">
           {productData?.data.map((product) => (
             <div key={product.id}>
-              <img src={product.imageUrl} />
+              <img src={product.imageUrl} className="w-full h-full object-cover" />
               <h3 className="shimmer-color-gray-400 my-[32px]">
                 {product.description}
               </h3>

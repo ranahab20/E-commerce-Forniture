@@ -1,21 +1,19 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Collection from "./components/collection/Collection";
-import CustomerSec from "./components/CustomerSection/CustomerSec";
-import DetailsSec from "./components/detailsSection/DetailsSec";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Trend from "./components/Trand/Trend";
+import Home from "./pages/Home/Home";
+import MainLayout from "./Layout/mainLayout/mainLayout";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Collection />
-      {/* <Trend /> */}
-      <DetailsSec/>
-      <CustomerSec/>
-    </>
+    <Routes>
+      <Route element={<MainLayout />} path="/">
+
+        <Route index element={<Home />} />
+        <Route path="home" element={<Home />} />
+        <Route path="productdetails" element={<ProductDetails/>} />
+      </Route>
+    </Routes>
   );
 }
 

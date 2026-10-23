@@ -20,7 +20,7 @@ function Button({
     outline: {
       primary: "bg-white text-primary border-primary hover:bg-primary/10",
       secondary: "bg-white text-black border-black hover:bg-black/10",
-      black: "bg-white text-black border-black hover:bg-black/10",
+      black: "bg-grey text-grey border-black hover:bg-black/10",
     },
   };
 
