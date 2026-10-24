@@ -118,7 +118,7 @@ const Collection = () => {
           })}
         </div>
         <div className="flex flex-wrap gap-[32px]">
-          {productData?.data.map((product) => (
+          {productData?.data?.items?.map((product) => (
             <div key={product.id}>
               <img src={product.imageUrl} className="w-full h-full object-cover" />
               <h3 className="shimmer-color-gray-400 my-[32px]">
